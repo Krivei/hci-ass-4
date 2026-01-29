@@ -1,0 +1,646 @@
+%%
+%% This is file `sample-acmsmall-tagged.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `all,journal,acmsmall,tagged')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-acmsmall-tagged.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%% The tagged file should start with the metadata commands.
+%% We also need currently use lualatex-dev for compilation!
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+\documentclass[sigchi]{acmart}
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmlicensed}
+\copyrightyear{2018}
+\acmYear{2018}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+%%
+%% These commands are for a JOURNAL article.
+\acmJournal{JACM}
+\acmVolume{37}
+\acmNumber{4}
+\acmArticle{111}
+\acmMonth{8}
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%% use of package for code snippets
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{float}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{People's Behavior When Waiting in Line}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Lah Hong Wai}
+\affiliation{%
+	\institution{Bauhaus-Universität Weimar}
+	\city{Weimar}
+	\country{Germany}}
+\email{lah.hong.wai@uni-weimar.de}
+
+\author{Daniel Radianto}
+\affiliation{%
+	\institution{Bauhaus-Universität Weimar}
+	\city{Weimar}
+	\country{Germany}}
+\email{daniel.cristianindra.radianto@uni-weimar.de}
+
+\author{Xavier Theodosius}
+\affiliation{%
+	\institution{Bauhaus-Universität Weimar}
+	\city{Weimar}
+	\country{Germany}}
+\email{xavier.julian.theodosius@uni-weimar.de}
+
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Lah et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+	Waiting is generally regarded as part of a consumer's experience. While waiting, individuals may exhibit interesting behaviour tendencies that are not usually commented on. In this research, we explore these behaviours through an observation study. This was done at a Bratwurst stall, where the length of queue can be unpredictable. Three sessions were conducted separately on different times of the day, and then discussed on the similarities and differences. Results showed that most customers exhibited very similar behavioural patterns while waiting for their turn. 
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+	<ccs2012>
+	<concept>
+	<concept_id>10003120.10003121.10011748</concept_id>
+	<concept_desc>Human-centered computing~Empirical studies in HCI</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10003120.10003121.10003122.10003334</concept_id>
+	<concept_desc>Human-centered computing~User studies</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10003120.10003123</concept_id>
+	<concept_desc>Human-centered computing~Interaction design</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10003120.10003121.10003126</concept_id>
+	<concept_desc>Human-centered computing~HCI theory, concepts and models</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10003120.10003121.10003124.10011751</concept_id>
+	<concept_desc>Human-centered computing~Collaborative interaction</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~Empirical studies in HCI}
+\ccsdesc[500]{Human-centered computing~User studies}
+\ccsdesc[300]{Human-centered computing~Interaction design}
+\ccsdesc[300]{Human-centered computing~HCI theory, concepts and models}
+\ccsdesc[300]{Human-centered computing~Collaborative interaction}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{Waiting in Line, Behavioural Tendency, Behaviour Pattern, Qualitative Analysis}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+
+Waiting in a queue occurs very frequently, and it has become a common phenomenon, especially during the purchase of a product. A queue is commonly associated with negative consumer experience \cite{Carmon1995}, therefore it has become an important factor for organisations to find solutions to this problem. However, queues can still occur, if the supply of people providing to these customers were inadequate \cite{Fagundes2017}. At present, no laws were erected to govern how a queue should be done, including whether cutting queue can be done, or how the structure of a queue should be formed. 
+
+In Faguendes' findings, the norms of the line illustrates best what Robert Ellickson famously called "order without law". Everyone obeys this rule, but every problem encountered by individuals will provide an "unwritten sanction" based on their norms \cite{Fagundes2017}. This behaviour meant that every individual who wishes to join the line will stand behind the last person in the queue. This follows the psychology of conformity, where people look to others for cues. Once the queue is constructed, people will conform to the norms: maintain standing order, retain personal space norms and avoid cutting queues.
+
+When queuing, people tend to exhibit peculiar actions to eliminate this drudgery. A study illustrates that the queuing behaviour can be influenced by the behaviour of people, distractions and environmental factors \cite{Furnham2020}. These actions can be clearly observed through an observation study. Therefore, in this research, we seek to understand how a formation could occur, and what are the typical behaviours customers would exhibit while waiting in line, through multiple observation sessions.
+
+\section{Description of Approach and Considerations Taken}
+
+This research was conducted during the Christmas break of Germany, specifically the last week of the year. We expected a large number of people to gather in the most common activity, the Christmas Markets. From this, we explored and narrowed down places that could build up queues. Based on \cite{NooneLin2024}, popular locations were hotspots for queues. 
+
+As a starting point for our observation, we ideated and explored potential hotspots. The options were: 
+
+\begin{itemize}
+	\item Main square, with an ice skating ring and food stalls.
+	\item Glühwein bar.
+	\item Bratwurst stall.
+	\item Toys stall.
+\end{itemize}
+
+After several discussions, the Bratwurst stand was selected, due to the tendency of it serving on-the-go food and popularity of that specific stall. A Bratwurst stand sells the popular German hot dog in a bun as a fast food. This stall was also selected because it accommodates every age demographic, as Bratwurst is considered as a safe food. This helps with collecting a variety of unexpected behaviour that could be dependent on age.
+
+In consideration of our observing limitations, location to conduct this observation study and decent queue length, we avoided weekends and peak days like Christmas. We chose a day where there were a good number of people visiting the Christmas Market, adequate for the observation study. We discussed various time periods such that we can encapsulate different kinds of behaviours based on the time of day, and settled with three time periods. Each session was conducted for a duration of 30 minutes.
+
+\begin{itemize}
+	\item Lunch period: around 12.00 pm
+	\item Casual period: around 4.00 pm
+	\item Dinner period: around 6.00 pm
+\end{itemize}
+
+This study will be conducted at a position a distance away from the stall to avoid affecting the queue lines, while having a good observation viewpoint. We selected a bench located in proximity as the observation point.
+
+\begin{figure}[htbp]
+	\centering
+
+	\caption{The observation point, a bench, a distance away from the stall.}
+	\label{fig:obv1_obs_point}
+\end{figure}
+
+\section{Documentation of Observations and Insights Gained}
+
+\subsection{Observer 1}
+
+\subsubsection{Initial Observation}
+
+Session began on 18 December 2025, 4.18 pm. The queue observed throughout this session was not consistent; at times there could be a long queue, other times the line was non-existent. Most customers came in groups. A clear pattern can be seen: there was much more interaction within each group, and little to no interaction between different groups.
+
+Most groups had two members, and were often middle-aged or senior couples. In a census conducted by the German Statistical Department in 2022 – the most updated data currently, 50.4\% of the population fall into this category \cite{bundeswahlleiterin2024}. This supported the expectations of the potential customer age groups. Specific data about inferred aged of each member was not collected, due to limited abilities of the researcher.
+
+The behaviour of customers from queuing up to receiving the order was fairly uniform. This could be due to the simplicity of the ordering process, which has been laid down below.
+
+\begin{enumerate}
+	\item Decide on the type of Bratwurst.
+	\item Approach the seller and ask for the desired variant.
+	\item Collect the Bratwurst and deposit the money to the seller.
+	\item 	(Optional) Go to the sauce station on the left to acquire sauces from the sauce dispensers.
+\end{enumerate}
+
+The position of the stall, location of the sauce station and menu are shown in Figure \ref{fig:obv1_full}.
+
+\begin{figure}[htbp]
+	\centering
+
+	\caption{Hand-drawn illustration of the stall, sauce station and menu.}
+	\label{fig:obv1_full}
+\end{figure}
+
+\subsubsection{Establishing a Queue}
+
+The queue will always start at the right of the stall. This line would first be built up to a point, around 10 people, before it deviated to the right, forming an L-shape. This was surprisingly consistent for any queue that was constructed. More observations showed that the customers were looking at the menu. This representation is shown in Figure \ref{fig:obv1_queue}. Due to the blocked visibility of the sausage cart, the menu was the only source of information. This shape may be formed from influence of layout cues than explicit instructions.
+
+\begin{figure}[htbp]
+	\centering
+
+	\caption{Depiction of customers queuing up with an L-shaped queue.}
+	\label{fig:obv1_queue}
+\end{figure}
+
+The queue length was also influenced by customers' interests, where this was very evidently shown by new customers pointing at the queue before becoming part of it. Other customers tend to influence the decision making of new customers, thus leading to the construction of a longer queue.
+
+\subsubsection{Waiting in Queue}
+
+An interesting pattern between men and women was that while waiting, men put their hands in their pockets, whereas women would hold their purse in front of their waist. This could be seen across multiple groups; most tend to follow this pattern. However, this was not applicable for teenagers and young adults, where for individuals, their attention was mostly on their smartphones, and for groups, they had more physical contact with their members, laughing at jokes and so on. This implied that generation differences have an influence on the different waiting behaviours.
+
+\subsubsection{Receiving Order}
+
+There was no immediate pattern to whether the Bratwurst was received first, or the money was given first. Exchanges occurred with minimal hesitation. The exchange process thus does not rely on any fixed sequence of actions.
+
+\subsubsection{Collecting Sauce at the Sauce Station}
+
+After receiving the Bratwurst, most will head towards the sauce station for their sauce of choice. In contrast to the previous queue to get the Bratwurst, this queue was not straight, rather it was in a circle, usually formed in anti-clockwise. This indicates that the sauce station guided the circular formation of this queue. Besides that, customers remained indifferent to how the queue was formed, and followed this formation without hesitation. 
+
+\subsubsection{Receiving and Eating Etiquette}
+
+It was observed that people frequently received the Bratwurst with their left hand and pay with their right. However, it was difficult to infer if it was related to hand dominance. One study conducted a large sample survey and found that people tend to use their dominant hand for action requiring accuracy \cite{Jung2009}. This suggests that hand dominance determines preparatory behaviour.
+
+Another observation was that everyone who was holding the Bratwurst started consuming the end of the bun closest to the face. The opposite end is only eaten first when the Bratwurst is shared and another person eats from it. Therefore, initial bites occur on the side of the food item closest to the eater, with this pattern shifting only in shared consumption scenarios.
+
+\subsection{Observer 2}
+\subsubsection{Initial Observation}
+
+Session began on 18 December 2025, 6.22 pm. There seems to be multiple "waves" in the session. In each wave there were multiple customers, the customers tend to come in a group. each wave is separated by a period where there's no customer at all. The patterns of the customers behaviour are relatively easy to identify due to the simplicity of the transaction process.
+
+\subsubsection{Establishing a Queue}
+
+In the initial phase of making a queue there was not so many customers. New customers tend to start the queue by standing next to each other, after the queue gets populated and the stand is blocked by the queue, the new customers will then queue from behind, resulting in an "L" shaped queue. The temporary analysis is that the "L" shape may be made unintentionally because the first few customers want to see the food in the stand.
+
+\subsubsection{Waiting in a Queue}
+
+Each group tends to interact internally, and there was no observed interaction between each groups. When waiting in the queue, multiple customers were observed preparing for the transaction by taking out the money from their wallet. There were times when the sausages were not prepared perfectly, and some customers waited for the food while doing other things like talking to other people or organizing their belongings. The decision to prepare the money before the time of transaction suggests that the customers are trying to shorten the transaction time.
+
+\subsubsection{Receiving Order}
+
+After finishing the transaction, there was a tendency for the customers to go to the sauce station located a few meters from the Bratwurst stand. There was no observed pattern as to how multiple groups were getting the sauce, each group waited for the previous one to finish first. Most of the customers started eating the food not long after the transaction is finished either when walking somewhere else, settling on a table that was provided, or standing near the christmas market. The temporary analysis is that the sauce station may be positioned a few steps away from the place of transaction to prevent the stand from being overcrowded, resulting in a more manageable queue. The separate placement of the sauce station itself would not be a problem because of the size of the food, which is relatively not too big for customers to take with one hand.
+
+\subsection{Observer 3}
+
+\subsubsection{Initial Observation}
+
+Observation started on the 18th of December 2025, around 11.55 p.m. Under the impression that lunch time was coming, and at the time, the Christmas market was open around Marktplatz. Unknowingly, there are not many customers who come in the first 10 to 20 minutes. At 12.20 pm, the number of customers began to increase in Marktplatz, which influenced the length of the queue at the stall. Although the number of individuals increased, it was still not enough to form a queue, as it took around 5 minutes for the first group to arrive to buy the bratwurst. This indicates that user engagement is shaped by social and environmental timing cues. This suggests that queuing behavior emerges only after certain conditions are already met, such as the number of individuals who arrive at Marktplatz.
+
+\subsubsection{Establishing a Queue}
+
+The first queue occurred around 12.25, but it was not created because there was a combination of customers. Customers who arrived in groups had a significant impact on the queue. There were cases where, if one person in a group bought a bratwurst, the rest of the group often decided to buy something as well, sometimes choosing other items on the menu. The number of sellers and the amount of bratwurst also played a role, with queues sometimes forming when there was only one seller or when the ready-to-serve Bratwurst was in short supply. Another factor that caused queues was that some customers needed time to prepare the exact amount of money to pay for the bratwurst. However, giving change did not slow down the process, as the sellers already knew how much to return and where to get the coins. In general, queues formed due to a mix of social influence within groups and occasional service delays. These queues were shaped not only by customers making spontaneous decisions, but also by how the system managed sales and the overall service flow.
+
+\subsubsection{Waiting in Queue}
+
+There were multiple activities while the individuals were waiting in the queue. Younger customers either used a headset to listen to music or played on their own smartphones. A group of young customers, on the other hand, usually told jokes and sometimes teased their own friends. Older customers had two tendencies: female customers looked in their purses for money, and male customers put their hands in their pockets. In most cases, customers had already prepared their money before ordering the bratwurst, which also minimized delays in the ordering process.
+In some cases, a group of customers—some of whom initially did not want to buy the bratwurst—changed their minds because others had already bought it, which sometimes affected the queue because they had not prepared their money. Waiting in line created an idle moment that individuals tried to fill. These behaviors highlighted how individuals negotiated wait time based on social role, age, and context.
+
+\subsubsection{Receiving Order}
+
+After receiving their bratwurst, customers usually went to the sauce station, where they often had to wait in line again if there were many people around. The main activity in the queue was a simple buying-and-selling process in which the individual's primary goal was to buy a bratwurst. After the order and payment were done, customers usually moved to the side to take sauces like ketchup or mustard. Purchasing the bratwurst was identified as the primary goal, while adding sauces served as a secondary activity.
+
+\section{Interpretation and Discussion}
+
+The actions of customers were simple due to the ease of process in acquiring a Bratwurst. Based on the three sessions, not many differences could be seen. Nationality was initially taken into account for the purpose of investigating if variants of etiquette were involved, but the proportion of internationals against locals in this observation was negligible, and frequently aligning with the actions of the locals.
+
+There were multiple similar patterns observed. For all three sessions, the length of queue was always inconsistent. Sometimes there was no queue, and other times there was a long line. Often, the establishment of this queue was spurred by new customers who were interested at the Bratwurst and was influenced by an already present queue. Studies have shown that the presence of a queue is a form of social proof and illustrates the brand's popularity \cite{NooneLin2024, MiyazakiGrewalGoodstein2005}. Customers interpret this as a positive cue, which increases purchase intentions.
+
+An L-shape queue can be seen in multiple observations. The structure of the stall and the position of the menu were the driving influence to forming this queue shape. This was consistently seen for every new queue built. A notable difference was that the line perpendicular to the stall did not have a regular length. This implied that there was an unconscious limit before this line began to deviate away. The reason for this deviation could not be explored in this study due to limitations.
+
+The order of the queue was obeyed, and members within groups tend to cluster closer than their unacquainted counterparts. It could be seen clearly which members belong to a certain group. In proxemics research, people tend to maintain smaller distances with familiar others \cite{MirlisennaEtAl2024}. Due to how customers perceived comfort and interpersonal space, the process of distinguishing groups were rather simplistic. Besides that, little communication was observed outside each group. Customers only interacted with the unfamiliar if it was necessary, such as offering the others to use the sauce dispensers first.
+
+One notable difference as observed within two sessions were the queuing behaviour of different genders. Men tend to put their hands into their pockets while waiting, whereas women would hold their purse in front of their waist. 
+
+At the sauce station, several queue formations could be seen. One observation reported an anticlockwise formation, whereas another had two lines for each dispenser. This was in line with studies \cite{Fagundes2017, Furnham2020} and the psychology of conformity in that customers always conform to the existing queue structure.
+
+
+\section{Critical Reflection and Conclusion}
+
+Field observation required a lot of parameters that needed to be prepared, both technical and conceptual. The main thing observers need to understand is the focus of the observation, whereas in our case, it is the behavior of each individual while waiting in line.  This target later helped us focus on what we, as observers, want to focus on, as we need valid and accurate data. The environment also plays a significant role in observations. The environment must support both the observer and the subject so that the subject can act as naturally as possible during the observation. Natural behavior is crucial to ensure that data are not distorted by external factors and to produce a more representative picture of real conditions.
+
+Doing this observation helped us understand how important it is to see the people we are observing clearly. A good observation spot should let us see the whole queue and how people behave while waiting. If the queue was hard to see or did not happen often, it became difficult to collect valuable data. The time and place of the observation were also significant, even though people usually did not think much about them. These factors affect how many people we could observe and how different their behaviors were.
+
+During our observation, there were some days when things did not go as expected. Sometimes there were fewer people, or it was not during a busy time, so we did not see typical behavior. These situations are called observational anomalies. These situations were not ideal, but they did not cause the observation to fail. We could still see interesting differences, like how younger people often used phones or listened to music, while older people spent time quietly or talked more with others. We also noticed that when one person in a group bought something, others often followed—showing how social behavior can influence decisions. 
+
+Based on our findings, we understand that during queue formation, behavior varied depending on the environment and the age of the individuals. People in groups tended to engage in conversation and sometimes encouraged others to buy food as well. In contrast, individuals who were alone often used their smartphones when younger, or waited quietly without doing much when older. These behavioral patterns reflect what Maister (1984) described as coping strategies to make occupied time feel shorter, as well as the social influence mechanisms observed in public settings. However, these findings are context-dependent and based on a limited time frame and location, and may not fully represent broader patterns without further study.
+
+\section{Reflection on Lessons Learned About Doing Observations}
+
+The difficulties experienced by the observers vary depending on each individual. An evident problem discovered was the tendency for observers to put higher amount of attention to their writings instead of the queue as the size of the queue expands. After reviewing the notes, there was difficulty in identifying patterns due to the observers prioritizing the timestamps and group counts rather than information on behavioral details. Observers should put more balance to their focus to allow for more individual behavior observation. Self-reflection of each observer may also be helpful to decide on a more suitable method of observation.
+
+Reviewing the notes revealed that while structural patterns, such as the transition from a horizontal line to an L-shaped queue once the queue size reaches a certain amount, were relatively easy to identify, the analysis of the reasoning behind the transition vary among the observers. This interpretation challenge suggests that detailed behavioral information, such as head orientation and the direction of field of vision, may be important to observe as it allows the observers to interpret the intention of the customers.
+
+We had successfully obtained varieties of behaviours in each 30-minute session, but some information was shallow. Most observation notes were about what they were physically doing, but they were inadequate to determine insights about these specific actions done. For example, the men placed their hands in the pockets, while women had their purses placed in front of them. We were unable to infer as to why this was done. This showed that observation studies were not enough to understand consumers' behaviours.
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+\begin{acks}
+	We thank the participants for providing us their time to participate in this experiment. Special recognition goes to Professor Eva and Margarita Osipova for their guidance on this research study.
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{main-base}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+\section{Raw Observation Data}
+
+\subsection{Observer 1}
+
+Observer 1's data is shown in Table~\ref{tab:ob1_atb_1} to \ref{tab:ob1_atb_3}. The time column records the minute count, and the group contains the group number and the number of members if applicable.
+
+\begin{table}[H]
+	\begin{tabular}{lll}
+		\toprule
+		Observer Name   & Observation Date/Time    & Location          \\
+		\midrule
+		Lah Hong Wai & 18 December, 4.18 – 4.48 & Marktplatz Weimar \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+		\caption{Observation 1 data - part 1}
+	\label{tab:ob1_atb_1} 
+	\begin{tabularx}{\columnwidth}{llX}
+		\toprule
+		Time & Group            & Description                                                                                                                                                                 \\
+		\midrule
+		18   & 1 (2p)           & Starts talking, smiling, waiting                                                                                                                                            \\
+		20   & 1                & Lady watches friend, one gives money, another grabs   the bun                                                                                                               \\
+		& 1                & Pours sauces, give to friend                                                                                                                                                \\
+		& 1                & Not enough, takes more, bite once, give to another                                                                                                                          \\
+		23   & 2 (2p)           & Looks at sausage, might want something else, points   at it to the partner                                                                                                  \\
+		& 3 (2p)           & Observing the sausage, thinking whether should get                                                                                                                          \\
+		& 3                & No? waiting for possibly wife. Walked away                                                                                                                                  \\
+		25   & 4 (3p)           & Lady grabs purse                                                                                                                                                            \\
+		& 4.5 (2p)         & Waits behind G4 while chatting                                                                                                                                              \\
+		& 5 (1p)           & Queues up, stares at the queue                                                                                                                                              \\
+		& 6 (2p)           & Queues up, a bit confused where the line is, so   queues at the right of G4, G4.5, G5                                                                                       \\
+		& 3                & Receives bun, left to get the sauce                                                                                                                                         \\
+		& 7 (1)            & Arrives and queues                                                                                                                                                          \\
+		& 5                & Takes out phone scrolling, waiting for G4.5                                                                                                                                 \\
+		& 6                & Wife takes pic of the surrounding, let husband   queues                                                                                                                     \\
+		&                  & Wife walks around and looks around, maybe visitor?                                                                                                                          \\
+		&                  & Husband continues looking at the queue, occasionally   looking at wife                                                                                                      \\
+		& 4.5              & Receives, and chats with G4 at the sauce bar                                                                                                                                \\
+		& 2, 4.5, 4        & Smiling and chatting together at the sauce bar                                                                                                                              \\
+		& 2                & Left saying goodbye, 2 and 4.5 most likely   strangers, just acquainted                                                                                                     \\
+		& 4, 4.5           & Leaves sauce bar to an open space nearby to chat                                                                                                                            \\
+		& 10 (1)           & Looks around to see if should be ordered                                                                                                                                    \\
+		28   & 11 (2)           & Looking around, bending down and lifting leg,   perhaps lethargic?                                                                                                          \\
+		& 12 (1)           &                                                                                                                                                                             \\
+		& 13 (1)           &                                                                                                                                                                             \\
+		& 11               & Lady tries to shove jacket into bag, man holds the   bag. Both in queue. Looks difficult…                                                                                   \\
+		& 14 (2)           & Fumbles with purse to grab cash                                                                                                                                             \\
+		29   & 15 (1)           & Arrives, queues up and is vaping?                                                                                                                                           \\
+		& 14               & Grabs two sausage buns and head into a drinking bar   behind                                                                                                                \\
+		\bottomrule
+	\end{tabularx}
+
+\end{table}
+
+\begin{table}[H]
+	\caption{Observation 1 data - part 2}
+	\label{tab:ob1_atb_2} 
+	\begin{tabularx}{\columnwidth}{llX}
+		\toprule
+		30   & 16 (2)           & Lady joins, swallowed some kind of pill? Places   purse back into the bag with cash in hand. Man holds leash to a dog, both   queuing.                                      \\
+		&                  & Lady grabs sauce, man takes care of pet dog.                                                                                                                                \\
+		& 17 (2)           & Lady adjusts jacket, another lady trying to find   cash in bag. Grabs sauce with friend, laughs and left.                                                                   \\
+		& 18 (1)           & Lady grabs cash from purse.                                                                                                                                                 \\
+		& 19 (2)           & Lady looks at the bun and sausage, husband looks at   wife, wife shakes head but husband seems to start queuing.                                                            \\
+		& 20 (1)           & Man puts hand into jacket, waits. Gets cash out of   wallet.                                                                                                                \\
+		& 19               & Husband grabs sauce, wife prepares bun for sauce to   be placed                                                                                                             \\
+		& 21 (2)           & Looks on the floor, around, queuing up. Lady waits   for man to take bun.                                                                                                   \\
+		& 22 (2)           & Man grabs something from bag, looks at wife for   something                                                                                                                 \\
+		& 23 (2)           & Two ladies looks at menu                                                                                                                                                    \\
+		& 24 (2)           & Grabs cash, passes, takes bun quickly                                                                                                                                       \\
+		& 23               & Receives food                                                                                                                                                               \\
+		36   & 24               & \begin{tabular}[c]{@{}l@{}}Grabs sauce, not enough, face looks frustrated,   grabbed some more\\    \\ Friend laughed\end{tabular}                                          \\
+		& 23               & Lady set sauce and helps friend to grab some                                                                                                                                \\
+		&                  & Another lady walks around, got shocked because a   group of people started screaming (seems like a school trip, a pair of   students didn’t stay together, got reprimanded) \\
+		& 26 (2)           & Stares at the sauce bar waiting for 23 to complete                                                                                                                          \\
+		& 25               & Grabs bun and disappeared without the sauce                                                                                                                                 \\
+		& 27 (2)           & Kid gives mom some paper? Mom holds purse                                                                                                                                   \\
+		& 28 (1)           & Lady holds purse waiting for 27                                                                                                                                             \\
+		41   & 29 (1)           & Sees queue, queues up                                                                                                                                                       \\
+		42   & 30 (1)           & Looks at menu                                                                                                                                                               \\
+		& 31 (1)           & Queues up, places hand in pocket                                                                                                                                            \\
+		& 32 (1)           & Hands in pocket, watches bun bending in front, holds   cash                                                                                                                 \\
+		43   & 33 (1)           & Hands placed together in front of waist, watches,   queues                                                                                                                  \\
+		& 34 (3)           & Talking cheerfully, one points at menu, deciding                                                                                                                            \\
+		& 35 (2)           & Also discussing                                                                                                                                                             \\
+		44   & 36 (2)           & Starts queuing to look at the sausage                                                                                                                                       \\
+		& 37 (2)           & Looks for a bit, left uninterested                                                                                                                                          \\
+		& 38 (4)           & \begin{tabular}[c]{@{}l@{}}Group of friends met with 35, talks a lot\\    \\ Doesn’t seem like potential customers\end{tabular}                                             \\
+		& 39 (2)           & -                                                                                                                                                                           \\
+		& 40 (2)           & Looks at line, looks at wife, wife says nope, left                                                                                                                          \\
+		\end{tabularx}
+	\end{table}
+
+\begin{table}[H]
+		\caption{Observation 1 data - part 3}
+	\label{tab:ob1_atb_3} 
+\begin{tabularx}{\columnwidth}{llX}
+		\toprule
+		45   & 41 (2)           & Queues up, one points at something, maybe menu                                                                                                                              \\
+		& 42 (2)           & Looks at the hot dogs by going near the glass, once   satisfied, queued up                                                                                                  \\
+		& 43 (1)           & Looks at menu and queues, preps wallet for cash                                                                                                                             \\
+		& ?? (existing, 2) & Talking at sauce place                                                                                                                                                      \\
+		46   & 44 (1)           & Looks at menu, and looks at 43, seems unrelated to   43                                                                                                                     \\
+		47   & 45 (1)           & Looks at the pub behind while waiting. Always takes   out wallet. (What did I write??)                                                                                      \\
+		48   & 46 (2)           & Adjust jacket, fix bag, child watches \\
+		\bottomrule                                                     
+	\end{tabularx}
+
+\end{table}
+
+The process is supported by the illustrations shown in Figure \ref{fig:obv1_af}. Actual images were not taken to protect the privacy of the customers.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\columnwidth}
+	\centering
+
+	\subcaption{Position of stall, sauce station and menu.}
+	\end{subfigure}
+	\vspace{0.5cm}
+	\begin{subfigure}{\columnwidth}
+	\centering
+
+	\subcaption{Depiction of customers queuing up with an L-shaped queue.}
+	\end{subfigure}
+	\vspace{0.5cm}
+	\begin{subfigure}{\columnwidth}
+	\centering
+
+	\subcaption{Location of observation process done on the bench in proximity.}
+	\end{subfigure}
+	\caption{Hand drawn illustrations of location and processes.}
+	\label{fig:obv1_af}
+\end{figure}
+
+\subsection{Observer 2}
+
+Observer 2's data is shown in Table~\ref{tab:ob2_atb_1} to \ref{tab:ob2_atb_2}. The time column records the minute count, and the group contains the group number.
+
+\begin{table}[H]
+	\begin{tabular}{lll}
+		\toprule
+		Observer Name   & Observation Date/Time    & Location          \\
+		\midrule
+		Xavier Julian T. & 18 December, 6.22 – 6.52 & Marktplatz Weimar \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+			\caption{Observation 2 data - part 1}
+	\label{tab:ob2_atb_1} 
+	\begin{tabular}{llp{5cm}}
+		\toprule
+		Time  & Group & Description                                                                                                                                                                 
+		\\
+		\midrule
+		22 & 1     & First person to queue, goes straight to   the stand, choosing the food, pays, chats a while to wait, organizes   belongings while waiting, went to the sauce station after. \\
+		24 & 2     & Goes next to the previous customer,   starts ordering, pays, and left.                                                                                                      \\
+		25 & 3     & Queues from behind, orders, pays, went to   the sauce station after.                                                                                                        \\
+		26 & 4     & Queues behind the 3rd group,   orders, went to the sauce station after.                                                                                                     \\
+		27 & 5     & Queued behind each other, goes to the   sauce station after.                                                                                                                \\
+		28 & 6     & 1 Person queues, prepared money before   their turn to order.                                                                                                               \\
+		29 & 7     & 1 group, queued next to the previous   person, orders, pays, 1 goes to the sauce station while the other waits.                                                             \\
+		31 & 8     & 1 group came, bought food, left.                                                                                                                                            \\
+		31 & 9     & 1 person came, ordered, paid, went to the   sauce station before leaving.                                                                                                   \\
+		31 & 10    & 1 group came, ordered, paid, left.                                                                                                                                          \\
+		32 & 11    & 1 person queued next to the group.                                                                                                                                          \\
+		33 & 12    & 1 person, queued next to the stand, next   to the previous person.                                                                                                          \\
+		34 & 13    & 1 person, queued in front of the stand,   ordered.                                                                                                                          \\
+		35 & 14    & 1 group, queued in front, order, pays,   went for sauce station, left.                                                                                                      \\
+		35 & 15    & 1 group of kids came, queued behind the   previous group, pays, went for sauce station before leaving.                                                                      \\
+		36 & 16    & 1 group came, order, pays, went to sauce   station, left.                                                                                                                   \\
+		37 & 17    & 1 group came, order, pays, went to sauce   station, left.                                                                                                                   \\
+		37 & 18    & 1 group came, queued behind the previous   group, ordered, paid, went to sauce station, left.                                                                               \\
+		39 & 19    & 1 group came, ordered, waited for the   food being cooked, paid, went to sauce station, left.                                                                               \\
+		40 & 20    & 1 group came over to look at the food,   but left without buying.                                                                                                           \\
+		41 & 21    & 1 group came, queued next to the previous   customer, bought some food.                                                                                                     \\
+		43 & 22    & 1 person queued behind the previous   customer.                                            \\  
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{table}[H]
+			\caption{Observation 2 data - part 2}
+	\label{tab:ob2_atb_2} 
+	\begin{tabular}{llp{5cm}}
+		\toprule
+		43 & 23    & 1 person queued behind the previous   customer.                                                                                                                             \\
+		43 & 24    & 1 group queued behind the previous   customer, ate in front of the stand before leaving.                                                                                    \\
+		46 & 25    & 1 group came, order, went to sauce   station, left.                                                                                                                         \\
+		47 & 26    & 1 group came, order, went to sauce   station, ate nearby.                                                                                                                   \\
+		49 & 27    & 1 person, prepared money before ordering,   went to the sauce station.                                                                                                      \\
+		50 & 28    & 1 person, prepared money before ordering,   went to the sauce station.                                                                                                      \\
+		51 & 29    & 1 person, prepared money before ordering,   went to the sauce station.                                                                                                      \\
+		51 & 30    & 1 person queued next to the previous   person, picked out money while ordering.                                                                                             \\
+		52 & 31    & 1 group, queued in front of the stand,   prepares money while ordering.\\
+		 \bottomrule
+	\end{tabular}
+\end{table}
+
+The observed spatial layout is shown in Figure \ref{fig:obv2_af}.
+
+\begin{figure}[H]
+	\centering
+
+	\caption{Observed Positioning Layout}
+	\label{fig:obv2_af}
+\end{figure}
+
+\subsection{Observer 3}
+
+Observer 3's data is shown in Table~\ref{tab:ob3_atb_1}. The time column records the specific timeline, and the group contains the group number.
+
+\begin{table}[H]
+	\begin{tabular}{lll}
+		\toprule
+		Observer Name   & Observation Date/Time    & Location          \\
+		\midrule
+		Daniel K. R. & 18 December, 11.55 – 12.25 & Marktplatz Weimar \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+				\caption{Observation 3 data}
+	\label{tab:ob3_atb_1} 
+	\begin{tabular}{llp{5cm}}
+		\toprule
+		Time  & Group & Description                                                                                                                  \\
+		\midrule
+		11.55 & 1     & Group of students lining up after their   city tour. Only 3 students out of 9 to 10 students that are buying the   bratwurst \\
+		12.05 & 2     & Some pairs of families lining up for   buying the bratwurst.                                                                 \\
+		12.12 & 2     & 1 person queue to buy a bratwurst. He   chats with the seller. After that went to the sauce station.                         \\
+		12.15 & 3     & 3 people queue, a family. After buying   bratwurst for each member they queue again on the sauce station.                    \\
+		12.16 & 4     & More people start queueing, all   individuals and not in a group.                                                            \\
+		12.18 & 5     & 1 people queues in, and before ordering   they prepare some amount of money before ordering food.                            \\
+		12.21 & 6     & 1 group of queue. The final customers buy   a bratwurst and having a bit of queue on getting the tomato sauce and mustard.   \\
+		12.24 & 7     & 1 person come as queue up to order the   bratwurst.                                                                          \\
+		12.25 & 8     & 1 person, queued in front of the stand,   and straight order stuffs, already prepared money.                                 \\
+		12.25 & 9     & Group of kids came and order after the   previous person.                                                     \\
+		\bottomrule              
+	\end{tabular}
+\end{table}
+
+The observed spatial layout is shown in Figure \ref{fig:obv3_af}.
+
+\begin{figure}[H]
+	\centering
+
+	\caption{Observed Positioning Layout}
+	\label{fig:obv3_af}
+\end{figure}
+
+\end{document}
+\endinput
+%%
+%% End of file `sigconf-main.tex'.
