@@ -95,7 +95,8 @@
 \usepackage{tabularx}
 \usepackage{subcaption}
 \usepackage{float}
-
+\usepackage{multirow}
+\usepackage{array}
 %%
 %% end of the preamble, start of the body of the document source.
 \begin{document}
@@ -145,7 +146,7 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-	Waiting is generally regarded as part of a consumer's experience. While waiting, individuals may exhibit interesting behaviour tendencies that are not usually commented on. In this research, we explore these behaviours through an observation study. This was done at a Bratwurst stall, where the length of queue can be unpredictable. Three sessions were conducted separately on different times of the day, and then discussed on the similarities and differences. Results showed that most customers exhibited very similar behavioural patterns while waiting for their turn. 
+	Cooking is a complex activity that requires people to coordinate multiple appliances while managing time, safety, and task demands in their personal space. Understanding how attention is distributed during cooking is important for Human-Computer Interaction, as breakdowns in attention can lead to errors or unsafe situations. Using remote re-enactment video as a method, this study investigates how individuals distribute attention and interaction across kitchen appliances during cooking. Despite limitations such as a restricted field of view and limited contextual information, the collected data allowed observation of cooking sequences, attention shifts, and task transitions. Qualitative thematic analysis revealed recurring patterns in how participants coordinated actions, managed timing, and maintained situational awareness while cooking. The findings highlight that attention management relies on continuous adjustment rather than constant focus, and indicate that both timing and situational awareness play important roles in shaping the cooking workflow, as multiple tasks are carried out in parallel and often depend on one another. Collectively, cooking heavily emphasizes maintaining a workflow through continuous shifts in attention and interaction across appliances.
 \end{abstract}
 
 %%
@@ -191,7 +192,7 @@
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{Waiting in Line, Behavioural Tendency, Behaviour Pattern, Qualitative Analysis}
+\keywords{Cooking behavior, Attention, Interaction, Re-enaction Video, Remote Studies, Qualitative Analysis}
 
 %%
 %% This command processes the author and affiliation and title
@@ -200,15 +201,12 @@
 
 \section{Introduction}
 
-Waiting in a queue occurs very frequently, and it has become a common phenomenon, especially during the purchase of a product. A queue is commonly associated with negative consumer experience \cite{Carmon1995}, therefore it has become an important factor for organisations to find solutions to this problem. However, queues can still occur, if the supply of people providing to these customers were inadequate \cite{Fagundes2017}. At present, no laws were erected to govern how a queue should be done, including whether cutting queue can be done, or how the structure of a queue should be formed. 
+ Cooking is an integral activity in daily life. A combination of appliances can be used for this activity, including sanitization, food preparation, and serving. Using kitchen appliances during cooking requires a certain level of attention. Although cooking does not require constant focus, interruptions or shifts in attention can lead to mistakes or safety issues if the ongoing cooking process is forgotten. Maintaining awareness of active appliances, particularly those that involve heat or sharp objects, is therefore important during cooking. Without proper attention while cooking, accidents such as burnt food, overheated utensils, and even accidental harm can occur due to minor distractions or inattention. Understanding how attention and interaction work during cooking is crucial for Human-Computer Interaction, as cooking is a complex, real-world activity that combines physical actions, cognitive decision-making, and time management. By examining cooking as an everyday practice, this research aims to understand how people naturally manage multiple technologies in their home environment.
+  
+ This study focuses on how each individual distributes their attention and interacts with appliances. Attention is understood as the mental focus at a given time, while interaction is more about how an individual can create engagement across appliances, such as cleaning, preparing a serving place, or responding to alerts. Rather than treating appliance use as isolated actions, this research views cooking as a dynamic process in which users continuously adjust their focus in response to task demands, the appliance's response, and the current situation. Investigating these patterns can reveal how people prioritize tasks, manage interruptions, and coordinate actions across devices.   
+  
+ Building on this perspective, the research question guiding this study is: “How do individuals distribute attention and interaction across household appliances during everyday cooking?” This is an exploratory qualitative study that does not aim to establish causal relationships, but to identify recurring patterns of attention distribution and interaction. Using re-enactment video as the chosen qualitative method, the study seeks to understand how attention shifts across appliances and what factors influence these shifts, such as task importance, timing, and perceived risks (e.g., burning food or overcooking). Interactions are expected to concentrate around specific moments, including preparation, monitoring progress, and responding to changes during the cooking process.
 
-In Faguendes' findings, the norms of the line illustrates best what Robert Ellickson famously called "order without law". Everyone obeys this rule, but every problem encountered by individuals will provide an "unwritten sanction" based on their norms \cite{Fagundes2017}. This behaviour meant that every individual who wishes to join the line will stand behind the last person in the queue. This follows the psychology of conformity, where people look to others for cues. Once the queue is constructed, people will conform to the norms: maintain standing order, retain personal space norms and avoid cutting queues.
-
-When queuing, people tend to exhibit peculiar actions to eliminate this drudgery. A study illustrates that the queuing behaviour can be influenced by the behaviour of people, distractions and environmental factors \cite{Furnham2020}. These actions can be clearly observed through an observation study. Therefore, in this research, we seek to understand how a formation could occur, and what are the typical behaviours customers would exhibit while waiting in line, through multiple observation sessions.
-
-% =========================================
-% 	Methodology
-% =========================================
 \section{Methodology}
 
 Studying how individuals distribute attention across different household appliances during everyday cooking presents challenges, as attention shifts and coordination are difficult to capture in real time. Prior research addressed these challenges by employing re-enacted scenarios to capture interaction and routines \cite{Pink2017Design}. Drawing on insights from previous studies \cite{Buchenau2000}, the present study adopts re-enactment videos (REV), where they capture individuals re-enact a particular scenario from their everyday cooking. Video re-enactment was selected as it was an appropriate method to explore and understand participants' experiences, visible and hidden \cite{Pink2015DoingSensoryEthnography}. Themes were then developed through thematic analysis from the data.
@@ -357,6 +355,34 @@ The sink was therefore mandatory, as it assisted keeping hygiene, and integral i
 Participants selected appliances that were perceived as low-risk for cooking. This did not occur during the cooking, but rather when purchasing them. One participant highlighted that induction hob was preferred because ``it was safer than the gas option''. This implied that a suitable appliance was mandatory even outside of cooking, and helped shape the necessary attention to monitor and manage them.
 
 During interaction however, participants utilised what they needed, and observations did not show that they had a preference for a safer alternative, such as using a knife of lesser sharpness. Rather, great attention was given when handling dangerous tools or operating risky appliances. This showed that during interaction, participants did not select tools based on the risk, but rather their needs.
+
+\subsection{Discussion}
+The results of this study suggest that attention during cooking is not a static but a dynamic, distributed resource that is directed towards sensory feedback, risk mitigation, and spatial management.
+
+The findings in sensory cues usage suggests that individuals distribute their attention towards multiple sensory channels. Rather than constantly staring at an appliance, individuals utilized auditory (sizzling sounds) and tactile (gauging pan temperature with hands) cues. This suggests that attention is highly multimodal, as individuals 'listen' and 'feel' for progress rather than just 'seeing'. 
+
+Furthermore, the findings also suggest that the switching between "experience-based judgement" and "precise measurement" may happen due to the attention shifts based on the perceived risk and familiarity of the task. Individuals were observed to narrow their attention towards precision instead of their own intuition whenever the perceived risk exceeds a certain threshold.
+
+Finally, the study highlights that attention may not be solely focused on cooking tasks. A portion of the individual's attention was dedicated to "secondary" tasks, such as managing space constraints and maintaining hygiene. These behaviors are essential to maintain safety and workflow, showing that their attention and interactions were affected by the physical environment of the kitchen.
+
+The research demonstrated the effectiveness of remote re-enactment video observation to capture individual behavior, such as sensory checking, in private spaces that are not possible to capture by traditional interviews. For the HCI community, this research serves as a case study for conducting qualitative research when on-site access is limited. Furthermore, our iterative data analysis offers a model that is compatible when analyzing complex interactions.
+
+There are potential points of improvements that could be addressed by future technologies. Developers may be able to support the multimodality of the individuals. Recognizing that managing space may decrease the efficiency in cooking, there is a need for "compact" appliances that requires less spatial management, therefore reducing the frequency of attention being directed to "secondary" tasks.
+
+\subsection{Limitations}
+While the re-enactment method provided in-depth qualitative insights, it is limited by its artificial nature. Individuals may have maintained a higher hygiene standard or a more cautious knife skill than they would in a natural setting due to the feeling of being "monitored". Furthermore, the small sample size may not capture the diversity of cooking rituals. Future works could address this limitation by employing another observation method that would allow individuals to act naturally, increasing the sample size, and include a more diverse demographic as this would help determine if the 'threshold' between judgement and measurement is a universal human behavior or one that is influenced by culinary traditions or levels of expertise.
+
+
+\subsection{Self Reflection}
+
+The use of FigJam, as a feature of Figma for collaboration, allowed all the researchers to work collaboratively in real-time, allowing everyone to see interesting quotes and codes. The platform enables the possibility of identifying patterns that one person might have missed. Furthermore, a live-coding session was also conducted in order for researchers to provide live feedbacks during the analysis. 
+
+A significant challenge was encountered during the thematic analysis, in which there is the tendency for researchers to apply interpretive 'why' labels during the initial coding, rather than sticking to descriptive 'what' label. The researchers recognized that these 'incorrect' or premature labels could negatively impact the subsequent pattern identification process. To mitigate this, multiple iterations of the coding process were required to ensure that the final themes were based in actual observed behaviors rather than early researcher assumptions. Moreover, this challenge emphasized the importance of live-coding sessions, as it allows the researchers to resolve disagreements on labels earlier, rather than waiting for later iterations.
+
+Another challenge that was encountered would be the tendency for researchers to assume patterns as themes, resulting in a descriptive instead of interpretive research. In order to further refine the analysis, future studies should incorporate multiple iterations of collaborative coding, as having different researchers reviewing the same data would allow the identification of such a challenge earlier, ensuring that the final analysis is interpretive rather than just a summary of observation.
+
+Regarding the data collection process, having a single researcher to facilitate re-enactments was an intentional decision to optimize time efficiency. However, we reflect that having multiple researchers present might have enhanced problem identification during the data collection process, allowing for a higher quality data result. If the study were to be rerun, we would have likely improved the data collection process by increasing the number of researchers in a session. We would also increase the time investment in order to conduct a higher amount of live-coding session, ensuring the smoothness of each process.\section{Findings}
+
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
